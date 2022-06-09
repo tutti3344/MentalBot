@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>Responses.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Responses.py</font>
+</center></td></tr></table>
+<pre><span class="s0">from </span><span class="s1">datetime </span><span class="s0">import </span><span class="s1">datetime</span>
+
+<span class="s0">def </span><span class="s1">sample_responses(input_text):</span>
+    <span class="s1">user_message = str(input_text).lower()</span>
+
+    <span class="s0">if </span><span class="s1">user_message </span><span class="s0">in </span><span class="s1">(</span><span class="s2">&quot;hello&quot;</span><span class="s0">, </span><span class="s2">&quot;hi&quot;</span><span class="s1">):</span>
+        <span class="s0">return </span><span class="s2">&quot;Hey! What can I help you with?&quot;</span>
+
+
+
+    <span class="s0">if </span><span class="s1">user_message </span><span class="s0">in </span><span class="s1">(</span><span class="s2">&quot;who are you&quot;</span><span class="s0">, </span><span class="s2">&quot;who are you?&quot;</span><span class="s1">):</span>
+        <span class="s0">return </span><span class="s2">&quot;Hey! I am MentallyWellBot!&quot;</span>
+
+    <span class="s0">if </span><span class="s1">user_message </span><span class="s0">in </span><span class="s1">(</span><span class="s2">&quot;time&quot;</span><span class="s0">, </span><span class="s2">&quot;what's the time&quot;</span><span class="s1">):</span>
+        <span class="s1">now = datetime.now()</span>
+        <span class="s1">date_time = now.strftime(</span><span class="s2">&quot;%d/%m/%y, %H:%M:%S&quot;</span><span class="s1">)</span>
+
+        <span class="s0">return </span><span class="s1">str(date_time)</span>
+
+    <span class="s0">if </span><span class="s1">user_message </span><span class="s0">in </span><span class="s1">(</span><span class="s2">&quot;i am sekki&quot;</span><span class="s1">):</span>
+        <span class="s0">return </span><span class="s2">&quot;uwu owo fuck you&quot;</span>
+
+    <span class="s0">return </span><span class="s2">&quot;Sorry, I'm having trouble understanding you. &quot;</span></pre>
+</body>
+</html>
